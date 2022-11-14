@@ -1,5 +1,7 @@
 # Starter React Project for the Supabase Course
 
+Project is based on NetNinja's [SupabaseTutorial-for-Beginners](https://github.com/iamshaunjp/Supabase-Tutorial-for-Beginners/tree/starter-project).
+
 **How to run the starter project:**
 
 1. Once downloaded, navigate to the project directory in a terminal and run **npm install** to install all the project dependencies.
