@@ -10,6 +10,33 @@ const Create = () => {
   const [rating, setRating] = useState('')
   const [formError, setFormError] = useState(null)
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!title || !method || !rating) {
+      setFormError("Please fill in all fields");
+      return;
+    }
+
+    console.log(title, method, rating)
+
+    const { data, error } = await supabase
+      .from("smoothies")
+      .insert([{ title, method, rating }])
+      .select();
+
+    if (error) {
+      console.log(error);
+      setFormError(error.message);
+    }
+
+    if (data) {
+      console.log(data);
+      setFormError(null)
+
+    }
+
+}
+
   return (
     <div className="page create">
       <form onSubmit={handleSubmit}>
