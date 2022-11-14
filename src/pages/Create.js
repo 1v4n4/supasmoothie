@@ -31,7 +31,8 @@ const Create = () => {
 
     if (data) {
       console.log(data);
-      setFormError(null)
+      setFormError(null);
+      navigate("/");
 
     }
 
