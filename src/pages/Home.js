@@ -17,7 +17,7 @@ const Home = () => {
         setSmoothies(null);
       }
       if (data) {
-        setSmoothies(data.smoothies);
+        setSmoothies(data);
         setFetchError(null);
       }
     }
@@ -25,10 +25,6 @@ const Home = () => {
     fetchSmoothies();
 
 }, [])
-
-
-
-
   return (
     <div className="page home">
       {fetchError && <p>fetchError</p>}
