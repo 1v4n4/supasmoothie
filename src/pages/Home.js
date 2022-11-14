@@ -27,7 +27,7 @@ const Home = () => {
 }, [])
   return (
     <div className="page home">
-      {fetchError && <p>fetchError</p>}
+      {fetchError && <p>{fetchError}</p>}
       {smoothies &&
         (<div className="smoothies">
         <div className="smoothie-grid">
