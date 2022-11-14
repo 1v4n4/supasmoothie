@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Smoothie = ({ smoothie }) => {
+const SmoothieCard = ({ smoothie }) => {
   console.log(smoothie);
   return (
-    <div className="smoothie">
+    <div className="smoothie-card">
       <h3>{smoothie.title}</h3>
       <p>{smoothie.method}</p>
       <div className='rating'>{smoothie.rating}</div>
@@ -11,4 +11,4 @@ const Smoothie = ({ smoothie }) => {
   )
 }
 
-export default Smoothie;
+export default SmoothieCard;

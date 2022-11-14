@@ -1,5 +1,5 @@
 import React, { useEffect, useState }  from 'react';
-import Smoothie from '../components/Smoothie';
+import SmoothieCard from '../components/SmoothieCard';
 import supabase from "../config/supaClient";
 
 const Home = () => {
@@ -31,7 +31,7 @@ const Home = () => {
       {smoothies &&
         (<div className="smoothies">
         <div className="smoothie-grid">
-        {smoothies.map(smoothie => <Smoothie key={smoothie.id}  smoothie={smoothie} />)}
+        {smoothies.map(smoothie => <SmoothieCard key={smoothie.id}  smoothie={smoothie} />)}
         </div>
         </div>)
       }
