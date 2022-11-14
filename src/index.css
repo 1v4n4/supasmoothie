@@ -60,6 +60,19 @@ nav h1 {
   text-align: center;
 }
 
+.smoothie-card .buttons {
+  text-align: right;
+}
+.smoothie-card i {
+  color: #bbb;
+  margin-left: 10px;
+  font-size: 1.2em;
+  padding: 6px;
+  background: #eee;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 /* forms */
 form {
   background: #fff;
